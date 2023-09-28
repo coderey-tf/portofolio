@@ -1,4 +1,3 @@
-import project from "@/sanity/schemas/project";
 import { client } from "../lib/sanity";
 import Image from "next/image";
 
