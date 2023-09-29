@@ -11,6 +11,8 @@ async function getEntries() {
   return data;
 }
 
+export const revalidate = 60;
+
 export default async function GuestBook() {
   const data = await getEntries();
   return (
