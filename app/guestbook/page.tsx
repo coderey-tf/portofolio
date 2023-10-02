@@ -3,7 +3,7 @@ import { prisma } from "../db";
 
 async function getEntries() {
   const data = await prisma.guestbook.findMany({
-    take: 50,
+    take: 20,
     orderBy: {
       created_at: "desc",
     },
@@ -11,7 +11,7 @@ async function getEntries() {
   return data;
 }
 
-export const revalidate = 60;
+export const revalidate = 10;
 
 export default async function GuestBook() {
   const data = await getEntries();
@@ -28,7 +28,10 @@ export default async function GuestBook() {
 
           <div className="flex flex-col space-y-2">
             {data.map((entry) => (
-              <div key={entry.id} className="w-full text-sm break-words">
+              <div
+                key={entry.id}
+                className="w-full text-sm break-words dark:text-white"
+              >
                 {entry.message}
               </div>
             ))}

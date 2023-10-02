@@ -13,5 +13,13 @@ export async function postEntry(formData: FormData) {
         }
     })
 
+    const delay = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("delayed")
+        }, 3000);
+    });
+
+    await delay
+
     revalidatePath('/guestbook')
 }
