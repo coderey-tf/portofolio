@@ -22,6 +22,19 @@ export default {
             name: 'link',
             type: 'string',
             title: 'Link'
+        },
+        {
+            name: 'status',
+            type: 'string',
+            title: 'Project Status',
+            initialValue: 'completed',
+            options: {
+                list: [
+                    { title: 'Completed', value: 'Completed' },
+                    { title: 'On Progress', value: 'On Progress' },
+                ], // <-- predefined values
+                layout: 'radio' // <-- defaults to 'dropdown'
+            }
         }
     ]
 }

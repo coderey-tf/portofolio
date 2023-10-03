@@ -1,5 +1,5 @@
 import Form from "../components/Form";
-import { prisma } from "../db";
+import { prisma } from "../lib/db";
 
 async function getEntries() {
   const data = await prisma.guestbook.findMany({

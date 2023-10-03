@@ -8,7 +8,7 @@ export const ThemeSwitcher = () => {
   const { setTheme, resolvedTheme } = useTheme();
 
   return (
-    <div className="pt-2">
+    <div className="pt-[7px]">
       <Switch
         checked={enabled}
         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
@@ -16,7 +16,7 @@ export const ThemeSwitcher = () => {
         className={`${
           resolvedTheme === "dark" ? "bg-green-900" : "bg-green-700"
         }
-          relative inline-flex h-[26px] w-[50px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75 items-center p-1`}
+          relative inline-flex h-[28px] w-[50px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2  focus-visible:ring-white focus-visible:ring-opacity-75 items-center p-1`}
       >
         <span className="sr-only">Use setting</span>
         <span

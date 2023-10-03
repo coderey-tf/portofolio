@@ -10,7 +10,7 @@ export default function Navbar() {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="w-[1152px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[1152px] lg:w-[1152px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
               <div className="flex justify-between w-full">
                 <div className="flex items-center">
@@ -65,7 +65,7 @@ export default function Navbar() {
                   >
                     Projects
                   </Link>
-                  <Link
+                  {/* <Link
                     href="/contacts"
                     prefetch
                     className={`${
@@ -75,7 +75,7 @@ export default function Navbar() {
                     }`}
                   >
                     Contacts
-                  </Link>
+                  </Link> */}
                   <div className="my-auto">
                     <ThemeSwitcher />
                   </div>
