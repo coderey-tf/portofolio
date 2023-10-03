@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .inputForm {
+    @apply placeholder:dark:text-white/50 dark:text-white shrink h-12 px-4 text-base border border-black dark:border-white bg-white dark:bg-transparent rounded-lg focus:outline-2 focus:outline focus:outline-offset-2 focus:outline-green-700 focus:ring-transparent focus:border-black;
+  }
+}
