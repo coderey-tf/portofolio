@@ -1,3 +1,5 @@
+import { defineField } from "sanity";
+
 export default {
     name: 'project',
     title: 'Project',
@@ -35,6 +37,34 @@ export default {
                 ], // <-- predefined values
                 layout: 'radio' // <-- defaults to 'dropdown'
             }
-        }
+        },
+        {
+            name: 'techstack',
+            type: 'array',
+            of: [{ type: 'string' }],
+            title: 'Tech Stack',
+            options: {
+
+                list: [
+                    { title: 'Typescript', value: 'Typescript' },
+                    { title: 'Next JS', value: 'Next JS' },
+                    { title: 'Prisma', value: 'Prisma' },
+                    { title: 'Supabase', value: 'Supabase' },
+                    { title: 'GCP', value: 'GCP' },
+                    { title: 'Tailwind CSS', value: 'Tailwind CSS' },
+                    { title: 'Laravel', value: 'Laravel' },
+                    { title: 'Sanity', value: 'Sanity' },
+                    { title: 'React JS', value: 'React JS' },
+                    { title: 'Vue JS', value: 'Vue JS' },
+                    { title: 'Bootstrap', value: 'Bootstrap' },
+                    { title: 'Vercel', value: 'Vercel' },
+                    { title: 'Node JS', value: 'Node JS' },
+                    { title: 'PostgreSQL', value: 'PostgreSQL' },
+                    { title: 'MySQL', value: 'MySQL' },
+
+                ], // <-- predefined values
+            }
+        },
+
     ]
 }
