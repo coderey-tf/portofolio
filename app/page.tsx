@@ -5,7 +5,7 @@ import { Typing } from "./components/Typing";
 export default function Home() {
   return (
     <div className="divide-y divide-gray-500 dark:divide-gray-700">
-      <div className="space-y-2 pt-5 pb-8 md:space-x-5">
+      <div className="space-y-2 pt-5 pb-8 sm: md:space-x-5">
         <Typing />
       </div>
 
@@ -70,7 +70,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="prose max-w-none prose-lg pt-8 pb-7 dark:prose-invert ">
+        <div className="prose text-center md:text-left prose-lg pt-8 pb-7 dark:prose-invert ">
           <p>
             Hey everyone my name is Rey, I am 23 years old and i am Full Stack
             Developer based in Surabaya, Indonesia
@@ -78,7 +78,7 @@ export default function Home() {
           <p>
             I love building Full Stack applications with React. When I
             discovered React, I was blown away by its interactivity and speed.
-            Its virtual DM dan efficient rendering mechanism alllowed me to
+            Its virtual DOM dan efficient rendering mechanism alllowed me to
             create dynamic user interfaces that responded to user actions in
             real-time.
           </p>

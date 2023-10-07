@@ -28,7 +28,7 @@ export default function RootLayout({
           <Suspense fallback={<Loading />}>
             <div className="flex flex-col min-h-screen">
               <Navbar />
-              <main className="min-w-[400px] max-w-[1152px] lg:w-[1152px] mx-auto px-4 pb-4 sm:px-6 sm:pb-6 lg:px-8 lg:pb-8 flex-grow">
+              <main className="w-full lg:w-[1152px] mx-auto px-8 pb-8 flex-grow">
                 {children}
                 <Analytics />
               </main>

@@ -2,5 +2,5 @@
 import { Icon } from "@iconify/react";
 
 export default function Vue() {
-  return <Icon icon="devicon:vue" width="25" height="25" />;
+  return <Icon icon="devicon:vuejs" width="25" height="25" />;
 }
