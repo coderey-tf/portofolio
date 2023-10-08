@@ -32,8 +32,8 @@ export default {
             initialValue: 'completed',
             options: {
                 list: [
-                    { title: 'Completed', value: 'Completed' },
-                    { title: 'On Progress', value: 'On Progress' },
+                    { title: 'Completed', value: 'completed' },
+                    { title: 'On Progress', value: 'onprogress' },
                 ], // <-- predefined values
                 layout: 'radio' // <-- defaults to 'dropdown'
             }

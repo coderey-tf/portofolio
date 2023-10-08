@@ -17,7 +17,7 @@ export default function Home() {
             className="h-48 w-48 rounded-full object-cover border border-gray-700"
           />
           <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight dark:text-white">
-            Reynaldi Satriawan
+            Reynaldi Satriawan W
           </h3>
           <p className="text-gray-500 dark:text-gray-300 text-center">
             Hey my name is Rey and I am Full Stack Developer
